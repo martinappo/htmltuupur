@@ -1,0 +1,215 @@
+.mehikehea{
+	background-image: url(../img/mehike1.png);
+}
+.mehikehalb{
+	background-image: url(../img/mehike2.png);
+}
+.mehikehea, .mehikehalb{
+	
+	
+	height: 618px;
+	width: 213px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	a.nupp{
+		position: absolute;
+		display: block;
+		height: 35px;
+		width: 120px;
+		background-color: #fff;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		right: 50%;
+		margin-right: -60px;
+		top:100%;
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		-ms-transform: translateY(10px);
+		-o-transform: translateY(10px);
+		transform: translateY(10px);
+		border:none;
+		text-decoration: none;
+			background-color:#fff;
+			color: $d-green;
+			width: 150px;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			padding:0px;
+			line-height: 2;
+			clear:both;
+			&:hover{
+				border: solid 1px #fff;
+				color: #fff;
+				background-color: transparent;
+			}
+	}
+	.tekst{
+		position: absolute;
+		right: 213px;
+		width: 300px;
+		top: 125px;
+		background-color: #fff;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		min-height: 100px;
+		height: 100px;
+		display: table;
+		color: $brown;
+
+		&:before{
+			content:"";
+			height:15px;
+			width: 15px;
+			background-color:white;
+			position:absolute;
+			right:-5px;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			top:14px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+
+		}
+		.jaga{
+			background-color: $d-green;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: #fff;
+			width:100%;
+			z-index: 5;
+			position: relative;
+			background-image: url(../img/share.png);
+			background-repeat: no-repeat;
+			background-position: center 10px;
+			padding-top: 40px;
+			input#jaga{
+				border: none;
+				width: 70%;
+				color: $d-green;
+				background-color: #fff;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+				padding-top: 2px;
+				padding-bottom: 2px;
+				margin: 0;
+				outline:none;
+				margin-top: 5px;
+				display: inline-block;
+				height: 25px;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+
+
+			}
+			.fb-share-button{
+				margin-top: 5px;
+			}
+			input#jagabtn{
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				border: none;
+				margin: 0;
+				background-color: #fff;
+				color: $d-green;
+				display: inline-block;
+				height: 29px;
+				border: 1px solid #fff;
+				&:hover{
+					background-color: #fff;
+					color: $d-green;
+				}
+			}
+		}
+		p{
+			display: block;
+			vertical-align: middle;
+			width: 100%;
+			
+			&.error404{
+				font-size: 2em;
+				font-weight: bold;
+				position: absolute;
+				top: 5px;
+				left:50%;
+				width: 200px;
+				margin-left: -100px;
+			}
+		}
+	}
+	/*responsive*/
+	@media screen and (max-width: 880px) {
+		margin-top: 150px;
+		.tekst{
+		position: absolute;
+		right: 50%;
+		margin-right: -150px;
+		width: 300px;
+		top: -130px;
+		background-color: #fff;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		min-height: 100px;
+		height: 100px;
+		display: table;
+		color: $brown;
+		.jaga{
+			background-image: none;
+			padding-top: 5px;
+
+		}
+		a.nupp{ top:100px;
+			left:5px;
+			width: 110px;}
+		&:before{
+			content:"";
+			height:15px;
+			width: 15px;
+			background-color:white;
+			position:absolute;
+			right:50%;
+			margin-right:-7.5px;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			top: auto;
+			bottom: -7px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+
+		}
+		p{
+			vertical-align: middle;
+			&.error404{
+				font-size: 2em;
+				font-weight: bold;
+				position: absolute;
+				top:5px;
+				left:50%;
+				width: 200px;
+				margin-left: -100px;
+			}
+		}
+	}
+
+	}
+}

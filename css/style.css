@@ -1,0 +1,1907 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Signika:400,300,600");
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+  min-width: 300px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  -webkit-text-stroke-width: .0px;
+  font-family: 'Signika', sans-serif;
+  letter-spacing: 0.0625em;
+  color: #fff;
+  /** header *******************************************************/
+  /** kustutamise vaheleht **/
+}
+body p a {
+  color: #516f00;
+}
+body header.sisu {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+body header.sisu h1 {
+  background-color: transparent;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+body header.sisu h1.leht {
+  background-image: url(../img/header-leht.png);
+  background-repeat: no-repeat;
+}
+body header.sisu h1.lisa {
+  background-image: url(../img/header-lisa.png);
+  background-repeat: no-repeat;
+}
+body header.sisu h1.muuda {
+  background-image: url(../img/header-andmed.png);
+  background-repeat: no-repeat;
+}
+body header.sisu h1.info {
+  background-image: url(../img/info.png);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 540px) {
+  body header.sisu {
+    width: 95%;
+  }
+  body header.sisu h1 {
+    width: 95%;
+    text-align: center;
+    background-position: 7%;
+  }
+}
+body section.contain {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 965px) {
+  body section.contain {
+    width: 95%;
+  }
+}
+body #wrapper {
+  background-image: url(../img/main_bg.jpg);
+  width: 100%;
+  min-height: 820px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body .message {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+body .message h2 {
+  width: 100%;
+  text-align: center;
+}
+body footer {
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: -70px;
+}
+body footer p {
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  color: #516f00;
+  font-size: 0.7em;
+  -webkit-text-stroke-color: #516f00;
+}
+body footer p a {
+  color: #516f00;
+}
+body header#mainHeader {
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  /**** navigation **/
+}
+@media screen and (max-width: 810px) {
+  body header#mainHeader {
+    height: 265px;
+  }
+}
+@media screen and (max-width: 540px) {
+  body header#mainHeader {
+    height: 360px;
+  }
+}
+body header#mainHeader .logo {
+  width: 218px;
+  height: 150px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+@media screen and (max-width: 810px) {
+  body header#mainHeader .logo {
+    width: 100%;
+    float: none;
+  }
+}
+body header#mainHeader .login {
+  height: 150px;
+  line-height: 150px;
+  float: right;
+  font-weight: 300;
+  font-size: 0.7em;
+  position: relative;
+}
+body header#mainHeader .login p.error {
+  position: absolute;
+  line-height: 1;
+  bottom: 25px;
+  color: red;
+}
+body header#mainHeader .login input#header {
+  vertical-align: middle;
+  outline: none;
+}
+body header#mainHeader .login input.text {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: solid 1px #516f00;
+  height: 25px;
+  padding-left: 5px;
+  width: 150px;
+  color: #516f00;
+  margin-left: 5px;
+}
+body header#mainHeader .login input.btn {
+  height: 29px;
+  border: none;
+  background-color: #516f00;
+  border: solid 1px #516f00;
+  color: white;
+  letter-spacing: 0.0625em;
+  margin-left: -25px;
+  line-height: 29px;
+  border-radius: 0px 3px 3px 0px;
+  -webkit-text-stroke-color: #516f00;
+  width: 68px;
+}
+body header#mainHeader .login input.btn:hover {
+  background-color: white;
+  color: #516f00;
+  border: solid 1px #516f00;
+  line-height: 27px;
+}
+@media screen and (max-width: 810px) {
+  body header#mainHeader .login {
+    width: 100%;
+    float: none;
+    line-height: 60px;
+    text-align: center;
+    height: auto;
+  }
+  body header#mainHeader .login p.error {
+    bottom: -15px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  body header#mainHeader .login {
+    margin-top: 50px;
+  }
+  body header#mainHeader .login input.text {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 29px;
+    margin-left: 0px;
+  }
+  body header#mainHeader .login input {
+    margin-bottom: 5px;
+  }
+  body header#mainHeader .login input.btn {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body header#mainHeader .login p.error {
+    bottom: -25px;
+  }
+}
+body header#mainHeader nav#main {
+  float: right;
+  line-height: 150px;
+  /* media screen lõpp*/
+}
+body header#mainHeader nav#main ul {
+  list-style-type: none;
+}
+body header#mainHeader nav#main ul li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+}
+body header#mainHeader nav#main ul li a {
+  color: #3b2313;
+  text-decoration: none;
+  z-index: 3;
+  display: block;
+}
+body header#mainHeader nav#main ul li a:hover {
+  text-decoration: underline;
+}
+body header#mainHeader nav#main ul li:nth-of-type(1):after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/nav-minulehed.png);
+  height: 67px;
+  width: 67px;
+  background-repeat: no-repeat;
+  top: 30px;
+  z-index: -1;
+  left: 59%;
+  margin-left: -33.5px;
+}
+body header#mainHeader nav#main ul li:nth-of-type(2):after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/nav-uusleht.png);
+  height: 67px;
+  width: 67px;
+  background-repeat: no-repeat;
+  top: 30px;
+  z-index: -1;
+  left: 59%;
+  margin-left: -33.5px;
+}
+body header#mainHeader nav#main ul li:nth-of-type(3):after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/nav-andmed.png);
+  height: 67px;
+  width: 67px;
+  background-repeat: no-repeat;
+  top: 30px;
+  z-index: -1;
+  left: 59%;
+  margin-left: -33.5px;
+}
+body header#mainHeader nav#main ul li:nth-of-type(4):after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/nav-logout.png);
+  height: 67px;
+  width: 67px;
+  background-repeat: no-repeat;
+  top: 30px;
+  z-index: -1;
+  left: 59%;
+  margin-left: -33.5px;
+}
+@media screen and (max-width: 810px) {
+  body header#mainHeader nav#main {
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  body header#mainHeader nav#main ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  body header#mainHeader nav#main ul li {
+    float: none;
+    display: inline-block;
+    height: 50px;
+    padding-top: 0px;
+  }
+  body header#mainHeader nav#main ul li a {
+    line-height: 2;
+    padding-top: 65px;
+    vertical-align: bottom;
+    display: block;
+  }
+  body header#mainHeader nav#main ul li:after {
+    top: 15px !important;
+  }
+}
+@media screen and (max-width: 1130px) {
+  body header#mainHeader nav#main ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 540px) {
+  body header#mainHeader nav#main {
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  body header#mainHeader nav#main ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  body header#mainHeader nav#main ul li {
+    display: inline-block;
+    float: left;
+    height: 100px;
+    padding-top: 0px;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body header#mainHeader nav#main ul li a {
+    line-height: 2;
+    padding-top: 65px;
+    vertical-align: bottom;
+    display: block;
+  }
+  body header#mainHeader nav#main ul li:after {
+    top: 15px !important;
+  }
+}
+body section#kustuta .kustuta {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body section#kustuta .kustuta h2 {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+body section#kustuta input.btn {
+  border: none;
+  background-color: #fff;
+  color: #516f00;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0px;
+  line-height: 2;
+  clear: both;
+  margin-bottom: 5px;
+}
+body section#kustuta input.btn:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+section#main {
+  /** responsive **/
+}
+section#main .mullid {
+  width: 50%;
+  height: 625px;
+  background-image: url(../img/mullid.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+}
+section#main .registreeri {
+  width: 40%;
+  float: right;
+  margin-top: 150px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #fff;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+section#main .registreeri p.error {
+  position: absolute;
+  line-height: 1;
+  top: 10%;
+  color: red;
+  font-size: 0.7em;
+  font-weight: 300;
+  left: 10%;
+}
+section#main .registreeri .email-container {
+  background-image: url(../img/email.png);
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  width: 80%;
+  display: inline-block;
+  background-position: 20px center;
+}
+section#main .registreeri input.email {
+  width: 84%;
+  padding-left: 15%;
+  position: relative;
+}
+section#main .registreeri input {
+  outline: none;
+  font-size: 0.8em;
+}
+section#main .registreeri .parool-container {
+  display: inline-block;
+  background-image: url(../img/pw.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  width: 39%;
+}
+section#main .registreeri input.parool {
+  width: 67%;
+  padding-left: 32%;
+  margin-top: 15px;
+}
+section#main .registreeri input.email, section#main .registreeri input.parool {
+  border: none;
+  color: #82a037;
+  border-bottom: solid 1px #82a037;
+  line-height: 35px;
+  height: 35px;
+  background-color: transparent;
+}
+section#main .registreeri input.btn {
+  width: 80%;
+  border: none;
+  height: 45px;
+  margin-top: 25px;
+  background-color: #516f00;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+section#main .registreeri input.btn:hover {
+  border: solid 1px #516f00;
+  background-color: white;
+  color: #516f00;
+}
+@media screen and (max-width: 1050px) {
+  section#main .mullid {
+    width: 100%;
+    float: none;
+  }
+  section#main .registreeri {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #fff;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+  }
+}
+@media screen and (max-width: 700px) {
+  section#main .mullid {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 520px) {
+  section#main .mullid {
+    height: 400px;
+    background-image: url(../img/mullid-responsive.png);
+    margin-top: 20px;
+  }
+}
+
+section#minulehed a.lisa {
+  float: right;
+  text-decoration: none;
+  background-image: url(../img/sisu-lisauus.png);
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+section#minulehed a.lisa:hover {
+  text-decoration: underline;
+}
+section#minulehed table {
+  color: #fff;
+  font-weight: 300;
+}
+@media screen and (max-width: 540px) {
+  section#minulehed table {
+    margin-top: 50px;
+  }
+}
+section#minulehed table tr {
+  height: 40px;
+  border-bottom: solid 1px #fff;
+}
+section#minulehed table tr td {
+  padding-left: 60px;
+  font-size: 0.8em;
+}
+section#minulehed table tr td a {
+  text-decoration: none;
+  color: #fff;
+}
+section#minulehed table tr td a:hover {
+  text-decoration: underline;
+}
+section#minulehed table tr td a.muuda {
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+}
+section#minulehed table tr td a.muuda:hover {
+  border: solid 1px #fff;
+  background-color: transparent;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  height: 8px;
+  width: 8px;
+}
+@media screen and (max-width: 540px) {
+  section#minulehed table tr td {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+section#minulehed table tr.header {
+  border: none;
+  height: 100px;
+}
+@media screen and (max-width: 540px) {
+  section#minulehed table tr.header {
+    height: 75px;
+  }
+}
+section#minulehed table tr.header td {
+  padding-left: 60px;
+  font-size: 1em;
+}
+section#minulehed table tr.header td.pealkiri {
+  background-image: url(../img/sisu-pealkiri.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+section#minulehed table tr.header td.kuupaev {
+  background-image: url(../img/sisu-kuupaev.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+section#minulehed table tr.header td.kustuta {
+  background-image: url(../img/sisu-kustuta.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+section#minulehed table tr.header td.muuda {
+  background-image: url(../img/sisu-muuda.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+@media screen and (max-width: 540px) {
+  section#minulehed table tr.header td {
+    padding-left: 0px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 20px;
+  }
+  section#minulehed table tr.header td.pealkiri, section#minulehed table tr.header td.kuupaev, section#minulehed table tr.header td.kustuta, section#minulehed table tr.header td.muuda {
+    -webkit-background-size: 50px;
+    background-size: 50px;
+    background-position: top center;
+  }
+}
+
+section#lisamine {
+  /* õpilehe pealkiri input */
+  /* vorm */
+}
+section#lisamine input#lisaleht {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2em;
+  border-bottom: solid 1px #fff;
+  width: 100%;
+  padding-top: 20px;
+  line-height: 1.5;
+  outline: none;
+}
+section#lisamine .pealkiri-container {
+  background-image: url(../img/sisu-pealkiri.png);
+  width: 40%;
+  padding-left: 60px;
+  height: 81px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 80px;
+}
+section#lisamine .pealkiri-container:after {
+  content: "Õpilehe pealkiri";
+  color: #516f00;
+  height: 25px;
+  width: 130px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 0.7em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  right: -135px;
+  top: 40px;
+  margin-top: -14.5px;
+  background-color: #fff;
+}
+section#lisamine .pealkiri-container:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  right: -12px;
+  border-radius: 1px;
+  top: 34px;
+  -webkit-border-radius: 1px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 540px) {
+  section#lisamine .pealkiri-container {
+    width: 80%;
+  }
+  section#lisamine .pealkiri-container:after {
+    content: "Õpilehe pealkiri";
+    color: #516f00;
+    height: 25px;
+    width: 130px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.7em;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: absolute;
+    right: 50%;
+    margin-right: -65px;
+    top: -10px;
+    margin-top: -14.5px;
+    background-color: #fff;
+  }
+  section#lisamine .pealkiri-container:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    margin-right: -5px;
+    border-radius: 1px;
+    top: -5px;
+    -webkit-border-radius: 1px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+section#lisamine header.alam {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+section#lisamine header.alam h2 {
+  display: inline-block;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 60px;
+  margin-bottom: 0px;
+}
+section#lisamine header.alam h2.moiste {
+  background-image: url(../img/sisu-moiste.png);
+}
+section#lisamine header.alam h2.selgitus {
+  background-image: url(../img/sisu-selgitus.png);
+}
+section#lisamine .moistedContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+section#lisamine .moistedContainer .rida {
+  width: 100%;
+  margin-top: 20px;
+  display: table;
+  position: relative;
+  z-index: 1;
+}
+section#lisamine .moistedContainer .rida:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #000;
+  opacity: 0.1;
+  z-index: -1;
+}
+section#lisamine .moistedContainer .rida textarea#moiste, section#lisamine .moistedContainer .rida textarea#selgitus {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;
+  width: 49% !important;
+  line-height: 1.5;
+  padding: 0px;
+  outline: none;
+  margin: 0px;
+}
+section#lisamine .moistedContainer .rida textarea#moiste:focus, section#lisamine .moistedContainer .rida textarea#selgitus:focus {
+  -webkit-box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.9);
+}
+section#lisamine .moistedContainer .rida textarea#selgitus {
+  height: 100%;
+  font-size: 0.8em;
+  border: solid 1px #fff;
+  float: right;
+}
+section#lisamine .moistedContainer .rida textarea#moiste {
+  height: 100%;
+  font-size: 0.8em;
+  border: solid 1px #fff;
+  float: left;
+}
+@media screen and (max-width: 540px) {
+  section#lisamine .moistedContainer {
+    width: 90%;
+    margin-left: 0px;
+    margin-right: none;
+  }
+  section#lisamine .moistedContainer .rida {
+    margin-top: 15px;
+  }
+  section#lisamine .moistedContainer .rida textarea#moiste, section#lisamine .moistedContainer .rida textarea#selgitus {
+    width: 95% !important;
+    height: 50px;
+    float: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+section#lisamine p.error {
+  font-size: 0.7em;
+  float: right;
+  color: red;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  opacity: 0.7;
+}
+section#lisamine input.lisa {
+  float: none;
+  text-decoration: none;
+  background-image: url(../img/sisu-lisauus.png);
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 300;
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+section#lisamine input.lisa:hover {
+  text-decoration: underline;
+}
+section#lisamine input.kustuta_moiste {
+  position: absolute;
+  right: -25px;
+  top: -4px;
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/remove.png);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+section#lisamine input.salvesta {
+  float: none;
+  text-decoration: none;
+  background-image: url(../img/save.png);
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 300;
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+section#lisamine input.salvesta:hover {
+  text-decoration: underline;
+}
+section#lisamine input.kustuta {
+  float: none;
+  text-decoration: none;
+  background-image: url(../img/trash.png);
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 300;
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+section#lisamine input.kustuta:hover {
+  text-decoration: underline;
+}
+
+section#opileht header h1 {
+  display: inline-block;
+}
+section#opileht header a.info {
+  background-image: url("../img/info.png");
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  position: relative;
+}
+section#opileht header a.info:hover p.info {
+  display: block;
+}
+section#opileht header a.info p.info {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 5;
+  color: #fff;
+  text-transform: none;
+  padding: 30px;
+  display: none;
+}
+section#opileht header a.info p.info:after {
+  content: "";
+  display: block;
+  z-index: -2;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  border-radius: 5px;
+}
+@media screen and (max-width: 650px) {
+  section#opileht header a.info {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#opileht header a.info p.info {
+    right: 50%;
+    margin-right: -200px;
+  }
+}
+section#opileht .kaart {
+  width: 70%;
+  height: 400px;
+  background-image: url(../img/kaart-bg.png);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  position: relative;
+  display: table;
+  font-size: 3em;
+  font-weight: 400;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+section#opileht .kaart p.moiste {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #516f00;
+  font-size: 0.7em;
+  line-height: 2;
+  -webkit-text-stroke-width: 0px;
+  padding: 20px;
+}
+section#opileht .kaart p.selgitus {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #3b2313;
+  font-size: 0.7em;
+  line-height: 2;
+  -webkit-text-stroke-width: 0px;
+  padding: 20px;
+}
+section#opileht .kaart .nurk {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 85px;
+  width: 85px;
+  cursor: pointer;
+  cursor: hand;
+}
+section#opileht .kaart .nurk:hover:after, section#opileht .kaart .nurk:hover:before {
+  display: block;
+}
+section#opileht .kaart .nurk:after {
+  content: "Selge!";
+  color: #516f00;
+  height: 25px;
+  width: 80px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 0.3em;
+  -webkit-border-radius: 3px;
+  -webkit-text-stroke-width: 0;
+  border-radius: 3px;
+  position: absolute;
+  right: -90px;
+  top: 20px;
+  margin-top: -14.5px;
+  background-color: #fff;
+  display: none;
+}
+section#opileht .kaart .nurk:before {
+  content: "";
+  display: none;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  right: -17px;
+  border-radius: 1px;
+  top: 14px;
+  -webkit-border-radius: 1px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section#opileht .kaart .nurk.poleselge {
+  background-image: url(../img/pole-selge.png);
+}
+section#opileht .kaart .nurk.poleselge:hover {
+  background-image: url(../img/selge.png);
+}
+section#opileht .kaart .nurk.selge {
+  background-image: url(../img/selge.png);
+}
+section#opileht .kaart .next, section#opileht .kaart .prev {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: hand;
+  cursor: pointer;
+}
+section#opileht .kaart .next {
+  background-image: url(../img/next.png);
+  top: 45%;
+  right: -100px;
+}
+section#opileht .kaart .prev {
+  background-image: url(../img/prev.png);
+  top: 45%;
+  left: -100px;
+}
+@media screen and (max-width: 650px) {
+  section#opileht .kaart {
+    width: 85%;
+  }
+  section#opileht .kaart .next {
+    background-image: url(../img/next.png);
+    top: -40px;
+    right: 0px;
+  }
+  section#opileht .kaart .prev {
+    background-image: url(../img/prev.png);
+    top: -40px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 540px) {
+  section#opileht .kaart {
+    width: 95%;
+  }
+  section#opileht .kaart .next {
+    background-image: url(../img/next.png);
+    top: -40px;
+    right: 0px;
+  }
+  section#opileht .kaart .prev {
+    background-image: url(../img/prev.png);
+    top: -40px;
+    left: 0px;
+  }
+  section#opileht .kaart .nurk:after, section#opileht .kaart .nurk:before {
+    display: none;
+    visibility: hidden;
+  }
+}
+section#opileht .buttons {
+  width: 100%;
+  text-align: center;
+}
+section#opileht .poora, section#opileht .jarjesta, section#opileht .sega, section#opileht .teistpidi {
+  width: 120px;
+  height: 80px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  color: #516f00;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.8em;
+  display: inline-block;
+  cursor: hand;
+  cursor: pointer;
+}
+section#opileht .poora {
+  background-image: url(../img/poora.png);
+}
+section#opileht .jarjesta {
+  background-image: url(../img/jarjesta.png);
+}
+section#opileht .sega {
+  background-image: url(../img/shuffle.png);
+}
+section#opileht .teistpidi {
+  background-image: url(../img/teistpidi.png);
+}
+
+section#muutmine h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+section#muutmine h1.muuda {
+  width: 90%;
+}
+section#muutmine .muuda {
+  float: left;
+  width: 50%;
+}
+section#muutmine .muuda input#muuda {
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;
+  border-bottom: solid 1px #fff;
+  width: 80%;
+  padding-left: 20px;
+  line-height: 1.5;
+  outline: none;
+  margin-top: 20px;
+}
+section#muutmine .muuda input#muuda.btn {
+  border: none;
+  background-color: #fff;
+  color: #516f00;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0px;
+  line-height: 2;
+  clear: both;
+}
+section#muutmine .muuda input#muuda.btn:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: transparent;
+}
+section#muutmine .muuda p.error {
+  color: red;
+  font-size: 0.8em;
+  font-weight: 300;
+  background-color: #fff;
+  float: left;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 2px;
+}
+@media screen and (max-width: 540px) {
+  section#muutmine .muuda {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+  section#muutmine .muuda input#muuda {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mehikehea {
+  background-image: url(../img/mehike1.png);
+}
+
+.mehikehalb {
+  background-image: url(../img/mehike2.png);
+}
+
+.mehikehea, .mehikehalb {
+  height: 618px;
+  width: 213px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /*responsive*/
+}
+.mehikehea a.nupp, .mehikehalb a.nupp {
+  position: absolute;
+  display: block;
+  height: 35px;
+  width: 120px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  right: 50%;
+  margin-right: -60px;
+  top: 100%;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  border: none;
+  text-decoration: none;
+  background-color: #fff;
+  color: #516f00;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0px;
+  line-height: 2;
+  clear: both;
+}
+.mehikehea a.nupp:hover, .mehikehalb a.nupp:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.mehikehea .tekst, .mehikehalb .tekst {
+  position: absolute;
+  right: 213px;
+  width: 300px;
+  top: 125px;
+  background-color: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  min-height: 100px;
+  height: 100px;
+  display: table;
+  color: #3b2313;
+}
+.mehikehea .tekst:before, .mehikehalb .tekst:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  position: absolute;
+  right: -5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  top: 14px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mehikehea .tekst .jaga, .mehikehalb .tekst .jaga {
+  background-color: #516f00;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  background-image: url(../img/share.png);
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  padding-top: 40px;
+}
+.mehikehea .tekst .jaga input#jaga, .mehikehalb .tekst .jaga input#jaga {
+  border: none;
+  width: 70%;
+  color: #516f00;
+  background-color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0;
+  outline: none;
+  margin-top: 5px;
+  display: inline-block;
+  height: 25px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mehikehea .tekst .jaga .fb-share-button, .mehikehalb .tekst .jaga .fb-share-button {
+  margin-top: 5px;
+}
+.mehikehea .tekst .jaga input#jagabtn, .mehikehalb .tekst .jaga input#jagabtn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: none;
+  margin: 0;
+  background-color: #fff;
+  color: #516f00;
+  display: inline-block;
+  height: 29px;
+  border: 1px solid #fff;
+}
+.mehikehea .tekst .jaga input#jagabtn:hover, .mehikehalb .tekst .jaga input#jagabtn:hover {
+  background-color: #fff;
+  color: #516f00;
+}
+.mehikehea .tekst p, .mehikehalb .tekst p {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+.mehikehea .tekst p.error404, .mehikehalb .tekst p.error404 {
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+@media screen and (max-width: 880px) {
+  .mehikehea, .mehikehalb {
+    margin-top: 150px;
+  }
+  .mehikehea .tekst, .mehikehalb .tekst {
+    position: absolute;
+    right: 50%;
+    margin-right: -150px;
+    width: 300px;
+    top: -130px;
+    background-color: #fff;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    min-height: 100px;
+    height: 100px;
+    display: table;
+    color: #3b2313;
+  }
+  .mehikehea .tekst .jaga, .mehikehalb .tekst .jaga {
+    background-image: none;
+    padding-top: 5px;
+  }
+  .mehikehea .tekst a.nupp, .mehikehalb .tekst a.nupp {
+    top: 100px;
+    left: 5px;
+    width: 110px;
+  }
+  .mehikehea .tekst:before, .mehikehalb .tekst:before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    margin-right: -7.5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    top: auto;
+    bottom: -7px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .mehikehea .tekst p, .mehikehalb .tekst p {
+    vertical-align: middle;
+  }
+  .mehikehea .tekst p.error404, .mehikehalb .tekst p.error404 {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+
+section#kkk h2.kusimus {
+  color: #516f00;
+  background-color: #FFF;
+  border-radius: 3px;
+  font-size: 12pt;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+section#kkk p.vastus {
+  font-size: 11pt;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  margin-top: -3px;
+  padding: 20px;
+}
+section#kkk p.vastus a {
+  color: #fff;
+  text-decoration: underline;
+}
+section#kkk p.vastus:after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+
+section#autorid .autor {
+  width: 96%;
+  margin-bottom: 25px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+section#autorid .autor .pilt {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+}
+section#autorid .autor .info {
+  width: 50%;
+  float: right;
+}
+section#autorid .autor .info div {
+  width: 100%;
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 10pt;
+}
+section#autorid .autor .info b {
+  color: #c1dcb8;
+  font-size: 12pt;
+}
+section#autorid .autor p.lisainfo {
+  width: 100%;
+  clear: both;
+  font-style: italic;
+  padding-top: 20px;
+  font-size: 10pt;
+}
+@media screen and (max-width: 700px) {
+  section#autorid .autor {
+    width: 96%;
+    margin-bottom: 25px;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  section#autorid .autor .pilt {
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#autorid .autor .info {
+    width: 100%;
+    float: none;
+  }
+  section#autorid .autor .info div {
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 10pt;
+  }
+  section#autorid .autor .info b {
+    color: #c1dcb8;
+    font-size: 12pt;
+  }
+  section#autorid .autor p.lisainfo {
+    width: 100%;
+    clear: both;
+    font-style: italic;
+    padding-top: 20px;
+    font-size: 10pt;
+  }
+}

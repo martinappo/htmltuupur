@@ -1,0 +1,133 @@
+section#main {
+	.mullid {
+		width: 50%;
+		height: 625px;
+		background-image: url(../img/mullid.png);
+		background-size: contain;
+		background-repeat:no-repeat;
+		background-position:center center;
+		float:left;
+		
+	}
+	.registreeri {
+		width: 40%;
+
+		float:right;
+		margin-top: 150px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		background-color: #fff;
+		height: 300px;
+		text-align:center;
+		vertical-align:middle;
+		position: relative;
+		p.error{
+				position:absolute;
+				line-height: 1;
+				top: 10%;
+				color: red;
+				font-size: 0.7em;
+				font-weight: 300;
+				left: 10%;
+		}
+		.email-container{
+			background-image: url(../img/email.png);
+			background-repeat:no-repeat;
+			margin-top: 70px;
+			width:80%;
+			display:inline-block;
+			background-position: 20px center;
+		}
+		
+		input.email{
+			
+			width:84%;
+			padding-left: 15%;
+			position:relative;
+			
+
+		}
+
+		input {
+			outline:none;
+			font-size: 0.8em;
+		}
+		.parool-container{
+			display:inline-block;
+			background-image: url(../img/pw.png);
+			background-repeat:no-repeat;
+			background-position: 20px center;
+			width:39%;
+		}
+		input.parool {
+			width: 67%;
+			padding-left: 32%;
+			margin-top: 15px;
+
+
+		}
+		input.email, input.parool{
+			border:none;
+			color: $l-green;
+			border-bottom: solid 1px $l-green;
+			line-height:35px;
+			height:35px;
+			background-color: transparent;
+		}
+		input.btn {
+			width: 80%;
+			border:none;
+			height:45px;
+			margin-top: 25px;
+			background-color: $d-green;
+			color: #fff;
+			font-weight: 300;
+			border-radius: 3px;
+			font-size: 0.8em;
+			&:hover{
+				border: solid 1px $d-green;
+				background-color: white;
+				color: $d-green;
+			}
+		}
+	}
+
+/** responsive **/
+	@media screen and (max-width: 1050px) {
+		.mullid {
+		width: 100%;
+		float:none;
+		}
+		.registreeri {
+		width: 100%;
+		float:none;
+		margin-top: 50px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		background-color: #fff;
+		height: 300px;
+		text-align:center;
+		vertical-align:middle;
+		position: relative;
+	}
+
+	}
+
+	@media screen and (max-width: 700px) {
+		.mullid{
+			height: 500px;
+		}
+			
+	}
+	@media screen and (max-width: 520px) {
+		.mullid{
+			height: 400px;
+			background-image: url(../img/mullid-responsive.png);
+			margin-top: 20px;
+		}
+			
+	}
+
+
+
+}

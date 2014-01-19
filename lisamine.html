@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="css/jquery.jscrollpane.css" rel="stylesheet">
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header id="mainHeader">
+<section class="contain">
+<div class="logo"></div><!-- logo -->
+
+<nav id="main">
+<ul>
+<li><a href="">Minu õpilehed</a></li>
+<li><a href="">Lisa uus õpileht</a></li>
+<li><a href="">Minu andmed</a></li>
+<li><a href="">Logi välja</a></li>
+</ul>
+</nav>
+</section><!-- contain -->
+</header>
+
+<section id="lisamine" class="contain">
+<header class="sisu"><h1 class="lisa">Õpilehe lisamine</h1></header>
+<div class="pealkiri-container">
+<input id="lisaleht" class="pealkiri" type="text" name="pealkiri" value="Minu uus õpileht">
+</div>
+<header class="alam">
+<h2 class="moiste">Mõiste</h2>
+<h2 class="selgitus">Selgitus</h2>
+</header>
+<div class="moistedContainer">
+
+
+	<div class="rida">
+		<textarea id="moiste" rows="5" cols="50" type="text">Kirjuta siia mõiste.</textarea>
+		<textarea id="selgitus" rows="5" cols="50" type="text" name="pealkiri" value="">Kirjuta siia selgitus. </textarea>
+		<input class="kustuta_moiste" type="button">
+	</div>
+
+	<div class="rida">
+		<textarea id="moiste" rows="5" cols="50" type="text">Kirjuta siia mõiste.</textarea>
+		<textarea id="selgitus" rows="5" cols="50" type="text" name="pealkiri" value="">Kirjuta siia selgitus. </textarea>
+		<input class="kustuta_moiste" type="button">
+	</div>
+
+	<div class="rida">
+		<textarea id="moiste" rows="5" cols="50" type="text">Kirjuta siia mõiste.</textarea>
+		<textarea id="selgitus" rows="5" cols="50" type="text" name="pealkiri" value="">Kirjuta siia selgitus. </textarea>
+		<input class="kustuta_moiste" type="button">
+	</div>
+
+	<p class="error">Sa ei sisestanud selgitust!</p>
+</div>
+<input class="lisa" type="button" value="Lisa mõiste">
+<input class="kustuta" type="button" value="Kustuta õpileht">
+<input class="salvesta" type="button" value="Salvesta õpileht">
+
+
+
+</section>
+</div><!-- wrapper -->
+<footer>
+<p>Copyright (c) Martin Kabanen / www.crisp.ee</p>
+</footer>
+</body>
+</html>
