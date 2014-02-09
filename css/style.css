@@ -462,10 +462,11 @@ body .message h2 {
   text-align: center;
 }
 body footer {
-  height: 70px;
+  height: auto;
   width: 100%;
   background-color: #fff;
   margin-top: -70px;
+  position: relative;
 }
 body footer p {
   width: 100%;
@@ -477,6 +478,22 @@ body footer p {
 }
 body footer p a {
   color: #516f00;
+}
+body footer a.facebook {
+  background-image: url("../img/facebook.png");
+  height: 33px;
+  width: 180px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: block;
+  position: absolute;
+  right: 50%;
+  margin-right: -90px;
+  line-height: 33px;
+  top: 38%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 body header#mainHeader {
   height: 150px;
@@ -781,6 +798,24 @@ section#main .mullid {
   background-repeat: no-repeat;
   background-position: center center;
   float: left;
+  display: flex;
+  order: 2;
+}
+section#main .mullid h2 {
+  font-size: 11pt;
+  font-weight: normal;
+  display: block;
+}
+section#main .mullid h2#i1 {
+  float: right;
+  padding-left: 58%;
+  margin-top: 10%;
+}
+section#main .mullid h2#i2 {
+  float: right;
+}
+section#main .mullid h2#i3 {
+  float: right;
 }
 section#main .registreeri {
   width: 40%;

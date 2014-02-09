@@ -7,6 +7,24 @@ section#main {
 		background-repeat:no-repeat;
 		background-position:center center;
 		float:left;
+		display: flex;
+		order: 2;
+		h2{
+			font-size: 11pt;
+			font-weight: normal;
+			display: block;
+			&#i1{
+				float:right;
+				padding-left: 58%;
+				margin-top: 10%;
+			}
+			&#i2{
+				float:right;
+			}
+			&#i3{
+				float:right;
+			}
+		}
 		
 	}
 	.registreeri {

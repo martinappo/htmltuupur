@@ -94,10 +94,11 @@ body{
 	}
 	
 	footer{
-		height:70px;
+		height:auto;
 		width:100%;
 		background-color:#fff;
 		margin-top:-70px;
+		position: relative;
 		p{
 			width:100%;
 			text-align:center;
@@ -108,6 +109,22 @@ body{
 			a{
 				color: $d-green;
 			}
+		}
+		a.facebook{
+			background-image: url("../img/facebook.png");
+			height: 33px;
+			width: 180px;
+			background-repeat: no-repeat;
+			background-position: right center;
+			display: block;
+			position: absolute;
+			right: 50%;
+			margin-right: -90px;
+			line-height: 33px;
+			top: 38%;
+			text-align: left;
+			text-decoration: none;
+			text-transform: uppercase;
 		}
 	}
 
