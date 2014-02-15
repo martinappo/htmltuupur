@@ -479,21 +479,35 @@ body footer p {
 body footer p a {
   color: #516f00;
 }
-body footer a.facebook {
+body footer .footerwrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  body footer .footerwrapper {
+    width: 95%;
+  }
+}
+body footer .footerwrapper a.facebook {
   background-image: url("../img/facebook.png");
-  height: 33px;
-  width: 180px;
+  height: 78px;
+  width: 136px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
   display: block;
   position: absolute;
-  right: 50%;
-  margin-right: -90px;
-  line-height: 33px;
-  top: 38%;
-  text-align: left;
-  text-decoration: none;
-  text-transform: uppercase;
+  right: 0px;
+  margin-top: -39px;
+  top: 50%;
+}
+@media screen and (max-width: 600px) {
+  body footer .footerwrapper a.facebook {
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 60px;
+  }
 }
 body header#mainHeader {
   height: 150px;

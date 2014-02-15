@@ -110,22 +110,35 @@ body{
 				color: $d-green;
 			}
 		}
-		a.facebook{
-			background-image: url("../img/facebook.png");
-			height: 33px;
-			width: 180px;
-			background-repeat: no-repeat;
-			background-position: right center;
-			display: block;
-			position: absolute;
-			right: 50%;
-			margin-right: -90px;
-			line-height: 33px;
-			top: 38%;
-			text-align: left;
-			text-decoration: none;
-			text-transform: uppercase;
+		.footerwrapper{
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			@media screen and (max-width:960px) {
+			width: 95%;
+				
+			}
+			a.facebook{
+				background-image: url("../img/facebook.png");
+				height: 78px;
+				width: 136px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				display: block;
+				position: absolute;
+				right: 0px;
+				margin-top: -39px;
+				top: 50%;
+				@media screen and (max-width:600px) {
+					-webkit-background-size: contain;
+					background-size: contain;
+					height: 60px;
+				}
+			}
+
 		}
+		
 	}
 
 /** header *******************************************************/
